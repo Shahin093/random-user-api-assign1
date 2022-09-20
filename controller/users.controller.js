@@ -15,6 +15,17 @@ module.exports.saveAUser = (req, res, next) => {
     users.push(req.body);
     res.send(users);
 }
+module.exports.updateAUser = (req, res, next) => {
+    const { id } = req.params;
+    const newData = users.find(user => user.id === Number(id));
+    newData.id = id;
+    newData.gender = req.body.gender;
+    newData.name = req.body.name;
+    newData.contact = req.body.contact;
+    newData.address = req.body.address;
+    newData.photourl = req.body.photourl;
+    res.send(newData);
+}
 
  // "id":6,
     // "gender":"famale",

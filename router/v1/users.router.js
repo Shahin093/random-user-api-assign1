@@ -15,4 +15,8 @@ router
 router
     .route('/save')
     .post(userController.saveAUser);
+
+router
+    .route('/:id')
+    .patch(userController.updateAUser);
 module.exports = router;

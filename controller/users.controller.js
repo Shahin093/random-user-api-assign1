@@ -1,4 +1,4 @@
-const users = require("../users.json");
+let users = require("../users.json");
 
 module.exports.getUsers = (req, res, next) => {
     // console.log(users);
@@ -26,6 +26,14 @@ module.exports.updateAUser = (req, res, next) => {
     newData.photourl = req.body.photourl;
     res.send(newData);
 }
+
+module.exports.deleteAUser = (req, res, next) => {
+    // res.send('hii delete');
+    const { id } = req.params;
+    users = users.filter(user => user.id !== Number(id));
+    res.send(users);
+}
+
 
  // "id":6,
     // "gender":"famale",

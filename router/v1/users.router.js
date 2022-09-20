@@ -18,5 +18,6 @@ router
 
 router
     .route('/:id')
-    .patch(userController.updateAUser);
+    .patch(userController.updateAUser)
+    .delete(userController.deleteAUser)
 module.exports = router;

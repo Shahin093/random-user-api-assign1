@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "gender": "Male",
+        "name": "Shidul Islam",
+        "contact": "01774623000",
+        "address": "Jhulon pole",
+        "photourl": "https://ibb.co/80C8WZF"
+    },
+    {
+        "id": 2,
+        "gender": "Male",
+        "name": "Shidul Islam",
+        "contact": "01774623000",
+        "address": "Jhulon pole",
+        "photourl": "https://ibb.co/80C8WZF"
+    },
+    {
+        "id": 3,
+        "gender": "Male",
+        "name": "Shidul Islam",
+        "contact": "01774623000",
+        "address": "Jhulon pole",
+        "photourl": "https://ibb.co/80C8WZF"
+    },
+    {
+        "id": 4,
+        "gender": "Male",
+        "name": "Shidul Islam",
+        "contact": "01774623000",
+        "address": "Jhulon pole",
+        "photourl": "https://ibb.co/80C8WZF"
+    },
+    {
+        "id": 5,
+        "gender": "Male",
+        "name": "Shidul Islam",
+        "contact": "01774623000",
+        "address": "Jhulon pole",
+        "photourl": "https://ibb.co/80C8WZF"
+    }
+]

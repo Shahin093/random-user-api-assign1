@@ -11,9 +11,9 @@ module.exports.getAllData = (req, res, next) => {
     res.json(users);
 }
 module.exports.saveAUser = (req, res, next) => {
-    console.log(req.body);
     users.push(req.body);
     res.send(users);
+
 }
 module.exports.updateAUser = (req, res, next) => {
     const { id } = req.params;

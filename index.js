@@ -19,6 +19,11 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
+
+app.use('*', (req, res) => {
+    res.send('no found a data..')
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })

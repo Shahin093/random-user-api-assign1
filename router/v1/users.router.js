@@ -1,16 +1,18 @@
 const express = require("express");
 const userController = require("../../controller/users.controller");
+const limiter = require("../../middleware/limiter");
 
 const router = express.Router();
 
 router.route('/')
     .get(userController.getUsers)
-    // .get(userController.getAllData)
     .post()
 
 
 router
     .route('/all')
-    .get(userController.getAllData)
-
+    .get(limiter, userController.getAllData)
+router
+    .route('/save')
+    .post(userController.saveAUser);
 module.exports = router;

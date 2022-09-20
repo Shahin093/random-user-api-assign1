@@ -8,7 +8,14 @@ module.exports.getUsers = (req, res, next) => {
 }
 
 module.exports.getAllData = (req, res, next) => {
-    console.log('root');
     res.json(users);
-
 }
+module.exports.saveAUser = (req, res, next) => {
+    console.log(req.body);
+    users.push(req.body);
+    res.send(users);
+}
+
+ // "id":6,
+    // "gender":"famale",
+    // "name":"azmira"

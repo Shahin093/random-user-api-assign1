@@ -12,6 +12,7 @@ app.use(express.json());
 
 app.use('/api/v1/user', userRouter);
 app.use('/all', userRouter);
+app.use('/save', userRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
